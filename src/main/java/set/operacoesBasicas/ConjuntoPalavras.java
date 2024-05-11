@@ -34,11 +34,12 @@ public class ConjuntoPalavras {
     public void exibirPalavras(){
         if(!palavrasUnicas.isEmpty()){
             for(String palavra: palavrasUnicas){
-                System.out.println(palavra);
+                System.out.print(palavra + " ");
             }
         }else{
             System.out.println("Conjunto vazio!");
         }
+        System.out.println();
     }
 
     public static void main(String[] args){
@@ -52,6 +53,8 @@ public class ConjuntoPalavras {
         System.out.println("RSA in conjunto -> " + conjuntoPalavrasUnicas.verificarPalavra("RSA"));
         conjuntoPalavrasUnicas.exibirPalavras();
         conjuntoPalavrasUnicas.removerPalavra("Python");
+        conjuntoPalavrasUnicas.exibirPalavras();
+        conjuntoPalavrasUnicas.adicionarPalavra("Java");
         conjuntoPalavrasUnicas.exibirPalavras();
 
 
