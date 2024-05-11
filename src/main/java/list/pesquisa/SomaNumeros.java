@@ -56,6 +56,8 @@ public class SomaNumeros {
     }
 
     public static void main(String[] args){
+
+        //Testes da classe SomaNumeros
         SomaNumeros somaNumeros = new SomaNumeros();
 
         somaNumeros.adicionarNumero(4);
