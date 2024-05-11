@@ -13,7 +13,7 @@ public class Livro {
     }
 
     public String getTitulo() {
-        return titulo;
+        return this.titulo;
     }
 
     public void setTitulo(String titulo) {
@@ -21,7 +21,7 @@ public class Livro {
     }
 
     public int getAnoPublicacao() {
-        return anoPublicacao;
+        return this.anoPublicacao;
     }
 
     public void setAnoPublicacao(int anoPublicacao) {
@@ -29,7 +29,7 @@ public class Livro {
     }
 
     public String getAutor() {
-        return autor;
+        return this.autor;
     }
 
     public void setAutor(String autor) {
@@ -37,6 +37,8 @@ public class Livro {
     }
 
     public String toString(){
-        return "";
+        return this.getTitulo() + ", Autor -> " +
+                this.getAutor() + ", Ano de publicação -> " +
+                this.getAnoPublicacao();
     }
 }
