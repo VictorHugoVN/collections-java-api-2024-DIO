@@ -28,7 +28,21 @@ public class CadastroProduto {
     }
 
 
+    public static void main(String[] args){
 
+        CadastroProduto cadastroProduto = new CadastroProduto();
+
+        cadastroProduto.adicionarProduto("produto 1", 12, 10.0, 23);
+        cadastroProduto.adicionarProduto("produto 2", 13, 112.0, 45);
+        cadastroProduto.adicionarProduto("produto 3", 14, 20.0, 29);
+        cadastroProduto.adicionarProduto("produto 4", 15, 450.0, 20);
+
+        System.out.println(cadastroProduto.produtoSet);
+        //System.out.println(cadastroProduto.exibirProdutosPorNome());
+        //System.out.println(cadastroProduto.exibirProdutosPorPreco());
+
+
+    }
 
 
 
