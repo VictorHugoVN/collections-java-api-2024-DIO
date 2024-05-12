@@ -41,7 +41,7 @@ public class Contato {
     }
 
     public String toString(){
-        return "Contato{" +
+        return "\nContato{" +
                 "Nome -> " + this.getNome() +
                 '\'' + ", Número de Telefone -> " + this.getNumeroTelefone() +
                 "}";

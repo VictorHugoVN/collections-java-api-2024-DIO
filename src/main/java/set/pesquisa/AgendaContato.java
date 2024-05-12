@@ -42,7 +42,23 @@ public class AgendaContato {
     }
 
 
+    public static void main(String[] args){
+        AgendaContato agendaContato = new AgendaContato();
 
+        agendaContato.exibirContato();
+
+        agendaContato.adicionarContato("João", "11111");
+        agendaContato.adicionarContato("Maria", "12122");
+        agendaContato.adicionarContato("Fernanda", "33332");
+
+        agendaContato.exibirContato();
+
+        System.out.println(agendaContato.pesquisarPorNome("Maria"));
+        System.out.println(agendaContato.atualizarNumeroContato("Fernanda", "12345"));
+
+
+
+    }
 
 
 
