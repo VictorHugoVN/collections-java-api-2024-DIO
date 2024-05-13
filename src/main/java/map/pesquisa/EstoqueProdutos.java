@@ -36,6 +36,7 @@ public class EstoqueProdutos {
             for(Produto produto: estoqueProdutosMap.values()){
                 if(produto.getPreco() > maiorPreco){
                     produtoMaisCaro = produto;
+                    maiorPreco = produto.getPreco();
                 }
             }
         }
@@ -44,7 +45,22 @@ public class EstoqueProdutos {
 
 
 
+    public static void main(String[] args){
+        EstoqueProdutos estoqueProdutos = new EstoqueProdutos();
 
+        estoqueProdutos.adicionarProduto(12, "Tv", 3, 3000.0);
+        estoqueProdutos.adicionarProduto(13, "Notebook", 1, 3500.0);
+        estoqueProdutos.adicionarProduto(14, "Livro", 2, 100.0);
+        estoqueProdutos.adicionarProduto(15, "Smartphone", 2, 3400.0);
+
+
+        estoqueProdutos.exibirProdutos();
+
+        System.out.println("Valor total do estoque -> R$" + estoqueProdutos.calcularValorTotalEstoque());
+        System.out.println("Produto mais caro -> " + estoqueProdutos.obterProdutoMaisCaro());
+
+
+    }
 
 
 }
